@@ -8,43 +8,47 @@
 
 import Foundation
 
+
+//*
+ //METHOD 1
+ 
 //Model represent the Json structure
 struct ModelGlace: Codable {
-    //var height: Int
-    //var id : Int
-    //var is_default: Bool
-    //var location_area_encounters: String
-    //var name: String
-    //var order: Int
-    //var base_experience: Int
-    //var weight: Int
+    var height: Int
+    var id : Int
+    var is_default: Bool
+    var location_area_encounters: String
+    var name: String
+    var order: Int
+    var base_experience: Int
+    var weight: Int
 
    
-    //var species: Species
-    //var sprites: Sprites
+    var species: Species
+    var sprites: Sprites
     
-    //var moves : [Moves]
+    var moves : [Moves]
     var abilities: [Abilities]
-    //var forms: [Forms]
-   // var game_indices: [GameIndices]
+    var forms: [Forms]
+    var game_indices: [GameIndices]
     var stats: [States]
-   // var types: [Types]
+    var types: [Types]
     
-//    struct Species: Codable {
-//        var name: String
-//        var url: String
-//    }
-//
-//    struct Sprites: Codable{
-//        var back_default: String
-//        var back_female: String?
-//        var back_shiny: String
-//        var back_shiny_female: String?
-//        var front_default: String
-//        var front_female: String?
-//        var front_shiny: String
-//        var front_shiny_female: String?
-//    }
+    struct Species: Codable {
+        var name: String
+        var url: String
+    }
+
+    struct Sprites: Codable{
+        var back_default: String
+        var back_female: String?
+        var back_shiny: String
+        var back_shiny_female: String?
+        var front_default: String
+        var front_female: String?
+        var front_shiny: String
+        var front_shiny_female: String?
+    }
     
     struct Abilities: Codable {
 
@@ -58,20 +62,20 @@ struct ModelGlace: Codable {
         }
     }
     
-//    struct Forms: Codable {
-//        var name: String
-//        var url: String
-//    }
-//
-//    struct GameIndices: Codable {
-//        var game_index: Int
-//        var version: Version
-//
-//        struct Version: Codable {
-//            var name: String
-//            var url: String
-//        }
-//    }
+    struct Forms: Codable {
+        var name: String
+        var url: String
+    }
+
+    struct GameIndices: Codable {
+        var game_index: Int
+        var version: Version
+
+        struct Version: Codable {
+            var name: String
+            var url: String
+        }
+    }
 
 
     struct States: Codable {
@@ -85,28 +89,30 @@ struct ModelGlace: Codable {
         }
     }
 
-//    struct Types: Codable {
-//        var slot: Int
-//        var type: DetailTypes
-//
-//        struct DetailTypes: Codable {
-//            var name: String
-//            var url: String
-//        }
-//    }
-//
-//
-//    struct Moves: Codable {
-//        var move: Move
-//
-//        struct Move: Codable {
-//            var name: String
-//            var url: String
-//        }
-//
-//    }
+    struct Types: Codable {
+        var slot: Int
+        var type: DetailTypes
+
+        struct DetailTypes: Codable {
+            var name: String
+            var url: String
+        }
+    }
+
+
+    struct Moves: Codable {
+        var move: Move
+
+        struct Move: Codable {
+            var name: String
+            var url: String
+        }
+
+    }
 }
 
+
+//*/
 
 
 

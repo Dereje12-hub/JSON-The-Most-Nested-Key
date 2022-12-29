@@ -20,6 +20,16 @@
 		024984B8295A8D58006E1227 /* SampleJSONDragon.json in Resources */ = {isa = PBXBuildFile; fileRef = 024984B7295A8D58006E1227 /* SampleJSONDragon.json */; };
 		024984C2295AB7B0006E1227 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024984C1295AB7B0006E1227 /* Model.swift */; };
 		024984C4295AB7E3006E1227 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024984C3295AB7E3006E1227 /* FileLoader.swift */; };
+		024984CC295D2E22006E1227 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024984CB295D2E22006E1227 /* Species.swift */; };
+		024984CE295D3210006E1227 /* Sprites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024984CD295D3210006E1227 /* Sprites.swift */; };
+		024984D0295D41AE006E1227 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024984CF295D41AE006E1227 /* Moves.swift */; };
+		024984D3295D6167006E1227 /* ReadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024984D2295D6167006E1227 /* ReadingService.swift */; };
+		024984D5295D7FB2006E1227 /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024984D4295D7FB2006E1227 /* Abilities.swift */; };
+		024984D7295D7FCE006E1227 /* Forms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024984D6295D7FCE006E1227 /* Forms.swift */; };
+		024984D9295D7FD8006E1227 /* GameIndices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024984D8295D7FD8006E1227 /* GameIndices.swift */; };
+		024984DB295D8064006E1227 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024984DA295D8064006E1227 /* States.swift */; };
+		024984DD295D8081006E1227 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024984DC295D8081006E1227 /* Types.swift */; };
+		024984DF295D8443006E1227 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024984DE295D8443006E1227 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +67,16 @@
 		024984B7295A8D58006E1227 /* SampleJSONDragon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleJSONDragon.json; sourceTree = "<group>"; };
 		024984C1295AB7B0006E1227 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		024984C3295AB7E3006E1227 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		024984CB295D2E22006E1227 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		024984CD295D3210006E1227 /* Sprites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprites.swift; sourceTree = "<group>"; };
+		024984CF295D41AE006E1227 /* Moves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moves.swift; sourceTree = "<group>"; };
+		024984D2295D6167006E1227 /* ReadingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingService.swift; sourceTree = "<group>"; };
+		024984D4295D7FB2006E1227 /* Abilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abilities.swift; sourceTree = "<group>"; };
+		024984D6295D7FCE006E1227 /* Forms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forms.swift; sourceTree = "<group>"; };
+		024984D8295D7FD8006E1227 /* GameIndices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameIndices.swift; sourceTree = "<group>"; };
+		024984DA295D8064006E1227 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
+		024984DC295D8081006E1227 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		024984DE295D8443006E1227 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +130,8 @@
 				0249847F295A8C31006E1227 /* AppDelegate.swift */,
 				02498481295A8C31006E1227 /* SceneDelegate.swift */,
 				024984BB295AB68D006E1227 /* Model */,
+				024984D1295D4F96006E1227 /* Network */,
 				02498483295A8C31006E1227 /* ViewController.swift */,
-				024984C3295AB7E3006E1227 /* FileLoader.swift */,
 				024984B5295A8D38006E1227 /* SampleJSONGlaceon.json */,
 				024984B7295A8D58006E1227 /* SampleJSONDragon.json */,
 				02498485295A8C31006E1227 /* Main.storyboard */,
@@ -142,9 +162,43 @@
 		024984BB295AB68D006E1227 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				024984CA295D2E0E006E1227 /* DragonModel */,
+				024984C9295D2DF6006E1227 /* GlaceonModel */,
 				024984C1295AB7B0006E1227 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		024984C9295D2DF6006E1227 /* GlaceonModel */ = {
+			isa = PBXGroup;
+			children = (
+				024984CB295D2E22006E1227 /* Species.swift */,
+				024984CD295D3210006E1227 /* Sprites.swift */,
+				024984CF295D41AE006E1227 /* Moves.swift */,
+				024984D4295D7FB2006E1227 /* Abilities.swift */,
+				024984D6295D7FCE006E1227 /* Forms.swift */,
+				024984D8295D7FD8006E1227 /* GameIndices.swift */,
+				024984DA295D8064006E1227 /* States.swift */,
+				024984DC295D8081006E1227 /* Types.swift */,
+			);
+			path = GlaceonModel;
+			sourceTree = "<group>";
+		};
+		024984CA295D2E0E006E1227 /* DragonModel */ = {
+			isa = PBXGroup;
+			children = (
+				024984DE295D8443006E1227 /* File.swift */,
+			);
+			path = DragonModel;
+			sourceTree = "<group>";
+		};
+		024984D1295D4F96006E1227 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				024984C3295AB7E3006E1227 /* FileLoader.swift */,
+				024984D2295D6167006E1227 /* ReadingService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,9 +334,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				024984D3295D6167006E1227 /* ReadingService.swift in Sources */,
+				024984CC295D2E22006E1227 /* Species.swift in Sources */,
+				024984DD295D8081006E1227 /* Types.swift in Sources */,
+				024984CE295D3210006E1227 /* Sprites.swift in Sources */,
+				024984D5295D7FB2006E1227 /* Abilities.swift in Sources */,
 				024984C4295AB7E3006E1227 /* FileLoader.swift in Sources */,
 				024984C2295AB7B0006E1227 /* Model.swift in Sources */,
+				024984D7295D7FCE006E1227 /* Forms.swift in Sources */,
+				024984D0295D41AE006E1227 /* Moves.swift in Sources */,
+				024984DB295D8064006E1227 /* States.swift in Sources */,
+				024984DF295D8443006E1227 /* File.swift in Sources */,
 				02498484295A8C31006E1227 /* ViewController.swift in Sources */,
+				024984D9295D7FD8006E1227 /* GameIndices.swift in Sources */,
 				02498480295A8C31006E1227 /* AppDelegate.swift in Sources */,
 				02498482295A8C31006E1227 /* SceneDelegate.swift in Sources */,
 			);
